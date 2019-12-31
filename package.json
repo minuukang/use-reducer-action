@@ -1,0 +1,50 @@
+{
+  "name": "use-reducer-action",
+  "version": "1.0.0",
+  "description": "Create hook state and simple actions from useReducer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npx jest"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "reducer"
+  ],
+  "author": "Minwoo Kang <minukang5874@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinuKang/use-reducer-action.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MinuKang/use-reducer-action/issues"
+  },
+  "homepage": "https://github.com/MinuKang/use-reducer-action#readme",
+  "peerDependencies": {
+    "@types/react": "^16.9.17",
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^7.0.16",
+    "@types/enzyme": "^3.10.4",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.18",
+    "@types/react-test-renderer": "^16.9.0",
+    "@types/semantic-release": "^15.13.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.9.0",
+    "semantic-release": "^15.13.24",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {}
+}
