@@ -1,15 +1,30 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2017",
-    "rootDir": "src",
-    "outDir": "dist",
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "sourceMap": false,
     "noImplicitAny": true,
-    "declaration": true,
-    "sourceMap": true,
-    "strictNullChecks": true,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "node",
     "jsx": "react",
-    "lib": ["es2017", "dom"]
+    "lib": ["es2017", "dom"],
+    "declaration": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "typeRoots": ["./node_modules/@types"],
+    "baseUrl": "."
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
