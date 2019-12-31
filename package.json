@@ -8,9 +8,10 @@
     "clean": "rm -rf lib",
     "build": "npm run clean && tsc",
     "prepublishOnly": "npm run build",
-    "test": "npx jest"
+    "test": "npx nyc --clean jest --coverage"
   },
   "nyc": {
+    "tempDirectory": "./coverage",
     "require": [
       "ts-node/register",
       "source-map-support/register"

@@ -8,5 +8,6 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js"],
   testRegex: ".*_spec.tsx?$",
   moduleDirectories: ["node_modules", "<rootDir>/node_modules"],
-  automock: false
+  automock: false,
+  coverageReporters: ["json"]
 };
