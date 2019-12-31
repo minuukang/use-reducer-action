@@ -13,10 +13,7 @@
       }
     ],
     [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "./dist"
-      }
+      "@semantic-release/npm"
     ],
     "@semantic-release/github",
     [
