@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "eslint"
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "eslint"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "./dist"
+      }
+    ],
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "message": "Chore: update package.json version to ${nextRelease.version}"
+      }
+    ]
+  ]
+}
