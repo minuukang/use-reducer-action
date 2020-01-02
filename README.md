@@ -1,6 +1,6 @@
 # use-reducer-action
 
-Create hook state and simple actions from useReducer. this package will support **Typescript**.
+Create hook state and simple actions from useReducer. This package will support **Typescript**.
 
 ## How to use?
 
@@ -58,7 +58,7 @@ interface IProps {
 
 export default function CounterComponent({ defaultValue }: IProps) {
   const [
-    { value, visible },
+    { value },
     { increase, decrease, reset, setValue }
   ] = useCounterAction({ value: defaultValue || 0 });
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = React.useCallback(
